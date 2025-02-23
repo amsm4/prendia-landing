@@ -10,6 +10,7 @@ import SwiperComponent from "./components/swipper";
 import DBService from "./services/DBService";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ContactForm from "./components/contact";
 
 const App = () => {  
   const [email, setEmail] = useState('');
@@ -19,7 +20,7 @@ const App = () => {
 
       if (!email || !emailRegex.test(email)) {
         toast.error("Por favor, ingresa un correo válido.", {
-          position: "top-right",
+          position: "top-center",
           autoClose: 3000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -30,13 +31,12 @@ const App = () => {
         });
         return;
       }
-      console.log("entre");
       var id = await DBService.addSubscriber(email);
       console.log(id);
       if (id != null) {
         setEmail('');
         toast.success("Gracias por suscribirte, te mantendremos informado!", {
-          position: "top-right",
+          position: "top-center",
           autoClose: 3000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -49,7 +49,7 @@ const App = () => {
     } catch (error) {
       console.log(error);
       toast.error("Hubo un error al guardar tu correo, por favor intenta de nuevo.", {
-        position: "top-right",
+        position: "top-center",
         autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -242,8 +242,8 @@ const App = () => {
         <section id="contact" className="contact section">
 
           <div className="container section-title" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p><span>Need Help?</span> <span className="description-title">Contact Us</span></p>
+            <h2>Contacto</h2>
+            <p><span>Tienes preguntas?</span> <span className="description-title">Contáctanos</span></p>
           </div>
 
           <div className="container" data-aos="fade-up" data-aos-delay="100">
@@ -288,43 +288,15 @@ const App = () => {
                 <div className="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
                   <i className="icon bi bi-clock flex-shrink-0"></i>
                   <div>
-                    <h3>Horas de contacto<br /></h3>
-                    <p><strong>Mon-Sat:</strong> 11AM - 23PM; <strong>Sunday:</strong> Closed</p>
+                    <h3>Nuestros horarios<br /></h3>
+                    <p><strong>Lun-Sab:</strong> 11AM - 23PM; <strong>Domingo:</strong> Cerrado</p>
                   </div>
                 </div>
               </div>
 
             </div>
 
-            <form action="forms/contact.php" method="post" className="php-email-form" data-aos="fade-up" data-aos-delay="600">
-              <div className="row gy-4">
-
-                <div className="col-md-6">
-                  <input type="text" name="name" className="form-control" placeholder="Nombre" required="" />
-                </div>
-
-                <div className="col-md-6 ">
-                  <input type="email" className="form-control" name="email" placeholder="Email" required="" />
-                </div>
-
-                <div className="col-md-12">
-                  <input type="text" className="form-control" name="subject" placeholder="En que podemos ayudarte?" required="" />
-                </div>
-
-                <div className="col-md-12">
-                  <textarea className="form-control" name="message" rows="6" placeholder="Cuentanos un poco mas..." required=""></textarea>
-                </div>
-
-                <div className="col-md-12 text-center">
-                  <div className="loading">Cargando...</div>
-                  <div className="error-message"></div>
-                  <div className="sent-message">Tu mensaje fue enviado. Te responderemos a la brevedad!</div>
-
-                  <button type="submit">Enviar Mensaje</button>
-                </div>
-
-              </div>
-            </form>
+            <ContactForm />
 
           </div>
 
@@ -336,7 +308,7 @@ const App = () => {
             <div className="col-lg-3 col-md-6 d-flex">
               <i className="bi bi-geo-alt icon"></i>
               <div className="address">
-                <h4>Address</h4>
+                <h4>Dirección</h4>
                 <p>A108 Adam Street</p>
                 <p>New York, NY 535022</p>
                 <p></p>
@@ -347,9 +319,9 @@ const App = () => {
             <div className="col-lg-3 col-md-6 d-flex">
               <i className="bi bi-telephone icon"></i>
               <div>
-                <h4>Contact</h4>
+                <h4>Contacto</h4>
                 <p>
-                  <strong>Phone:</strong> <span>+34 689 348169</span><br />
+                  <strong>Teléfono:</strong> <span>+34 689 348169</span><br />
                   <strong>Email:</strong> <span>info@prendia.ai</span><br />
                 </p>
               </div>
@@ -358,10 +330,10 @@ const App = () => {
             <div className="col-lg-3 col-md-6 d-flex">
               <i className="bi bi-clock icon"></i>
               <div>
-                <h4>Opening Hours</h4>
+                <h4>Nuestros horarios</h4>
                 <p>
-                  <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br />
-                  <strong>Sunday</strong>: <span>Closed</span>
+                  <strong>Lun-Sab:</strong> <span>11AM - 23PM</span><br />
+                  <strong>Domingo</strong>: <span>Cerrado</span>
                 </p>
               </div>
             </div>
