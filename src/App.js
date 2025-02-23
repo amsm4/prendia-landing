@@ -121,16 +121,16 @@ const App = () => {
             <span>.</span>
           </a>
           <nav id="navmenu" className="navmenu d-flex justify-content-center align-items-center py-3">
-            <a href="#" className="mx-3 text-decoration-none text-dark" aria-label="Facebook">
+            <a href="http://www.facebook.com" className="mx-3 text-decoration-none text-dark" aria-label="Facebook">
               <i className="bi bi-facebook fs-4"></i>
             </a>
-            <a href="#" className="mx-3 text-decoration-none text-dark" aria-label="Instagram">
+            <a href="http://www.facebook.com" className="mx-3 text-decoration-none text-dark" aria-label="Instagram">
               <i className="bi bi-instagram fs-4"></i>
             </a>
-            <a href="#" className="mx-3 text-decoration-none text-dark" aria-label="Twitter">
+            <a href="http://www.facebook.com" className="mx-3 text-decoration-none text-dark" aria-label="Twitter">
               <i className="bi bi-twitter fs-4"></i>
             </a>
-            <a href="#" className="mx-3 text-decoration-none text-dark" aria-label="LinkedIn">
+            <a href="http://www.facebook.com" className="mx-3 text-decoration-none text-dark" aria-label="LinkedIn">
               <i className="bi bi-linkedin fs-4"></i>
             </a>
             <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
