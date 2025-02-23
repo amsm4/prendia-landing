@@ -4,7 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import GLightbox from "glightbox";
 import "glightbox/dist/css/glightbox.css";
-import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
 import PureCounter from "@srexi/purecounterjs";
 import SwiperComponent from "./components/swipper";
