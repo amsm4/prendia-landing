@@ -351,7 +351,7 @@ const App = () => {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6 d-flex">
+            <div className="col-lg-3 col-md-6 d-flex"> 
               <i className="bi bi-clock icon"></i>
               <div>
                 <h4>Nuestros horarios</h4>
