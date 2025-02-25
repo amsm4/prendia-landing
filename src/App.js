@@ -123,12 +123,6 @@ const App = () => {
             <a href="http://www.facebook.com" className="mx-3 text-decoration-none text-dark" aria-label="Instagram">
               <i className="bi bi-instagram fs-4"></i>
             </a>
-            {/* <a href="http://www.facebook.com" className="mx-3 text-decoration-none text-dark" aria-label="Twitter">
-              <i className="bi bi-twitter fs-4"></i>
-            </a>
-            <a href="http://www.facebook.com" className="mx-3 text-decoration-none text-dark" aria-label="LinkedIn">
-              <i className="bi bi-linkedin fs-4"></i>
-            </a> */}
             <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
         </div>
@@ -371,10 +365,8 @@ const App = () => {
             <div className="col-lg-3 col-md-6">
               <h4>Follow Us</h4>
               <div className="social-links d-flex">
-                {/* <a href="#" className="twitter"><i className="bi bi-twitter-x"></i></a> */}
                 <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
                 <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
-                {/* <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a> */}
               </div>
             </div>
 
