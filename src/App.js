@@ -127,12 +127,12 @@ const App = () => {
             <a href="http://www.facebook.com" className="mx-3 text-decoration-none text-dark" aria-label="Instagram">
               <i className="bi bi-instagram fs-4"></i>
             </a>
-            <a href="http://www.facebook.com" className="mx-3 text-decoration-none text-dark" aria-label="Twitter">
+            {/* <a href="http://www.facebook.com" className="mx-3 text-decoration-none text-dark" aria-label="Twitter">
               <i className="bi bi-twitter fs-4"></i>
             </a>
             <a href="http://www.facebook.com" className="mx-3 text-decoration-none text-dark" aria-label="LinkedIn">
               <i className="bi bi-linkedin fs-4"></i>
-            </a>
+            </a> */}
             <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
         </div>
@@ -162,6 +162,40 @@ const App = () => {
           </div>
           <div className="col-lg-6 hero-img-container">
             <img src="assets/img/landing-img.png" className="img-fluid animated hero-img" alt="" />
+          </div>
+        </section>
+        <section id="about" class="about section">
+          <div className="container section-title" data-aos="fade-up">
+            <h2>Sobre Prendia<br /></h2>
+            <p><span>Para que sirve</span> <span class="description-title">Prendia</span></p>
+          </div>
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/img/ia.png" class="img-fluid mb-4" alt="" />
+              </div>
+              <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
+                <div class="content ps-0 ps-lg-5">
+                  <p class="fst-italic">
+                  Prendia es una plataforma impulsada por inteligencia artificial que te ayuda a encontrar el outfit perfecto en segundos, 
+                  sin esfuerzo y adaptado a tu estilo, ocasión y presupuesto.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> <span>¿Tienes un evento importante y no sabes qué ponerte?</span></li>
+                    <li><i class="bi bi-check-circle-fill"></i> <span>¿Quieres renovar tu look sin perder horas buscando ropa?</span></li>
+                    <li><i class="bi bi-check-circle-fill"></i> <span>¿Te gustaría recibir combinaciones de prendas que realmente encajen contigo?</span></li>
+                  </ul>
+                  <p>
+                  <p>💡 Prendia lo hace por ti.</p><br />
+                  <p>Solo describes la ocasión, eliges tu presupuesto y preferencias, y la IA analiza miles de opciones en tiendas como Zara, H&M y Mango para ofrecerte outfits personalizados. </p>
+                  <p>Vas a poder modificar tus preferencias cuantas veces quieras hasta encontrar el outfit que se adapte a tus necesidades.</p>
+                  <p>Cuando te hayas decidido, Prendia te dará los enlaces para que puedas comprar los productos en las tiendas oficiales de los productos seleccionados.</p>
+                  <p>Ya no tendrás que navegar entre páginas y páginas de ropa, ni preocuparte por si las prendas combinan entre sí.</p>
+                  <p>Con Prendia, vestir bien nunca fue tan fácil. Tu estilo, sin complicaciones. 🚀</p>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section id="how-it-works" className="section light-background">
@@ -341,10 +375,10 @@ const App = () => {
             <div className="col-lg-3 col-md-6">
               <h4>Follow Us</h4>
               <div className="social-links d-flex">
-                <a href="#" className="twitter"><i className="bi bi-twitter-x"></i></a>
+                {/* <a href="#" className="twitter"><i className="bi bi-twitter-x"></i></a> */}
                 <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
                 <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
-                <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
+                {/* <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a> */}
               </div>
             </div>
 
