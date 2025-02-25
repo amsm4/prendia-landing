@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import GLightbox from "glightbox";
 import "glightbox/dist/css/glightbox.css";
 import "swiper/swiper-bundle.css";
-import PureCounter from "@srexi/purecounterjs";
 import SwiperComponent from "./components/swipper";
 import DBService from "./services/DBService";
 import { ToastContainer, toast } from "react-toastify";
@@ -97,9 +96,6 @@ const App = () => {
     GLightbox({
       selector: ".glightbox",
     });
-
-    // Pure Counter
-    new PureCounter();
 
     
 
